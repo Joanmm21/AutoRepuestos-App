@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "410210611331",
+    "project_id": "auto-repuestos-app",
+    "storage_bucket": "auto-repuestos-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410210611331:android:8a8042656bfbdfd4b8ebb6",
+        "android_client_info": {
+          "package_name": "sv.edu.autorepuestos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARGzj3lsQz3tFlys3JaFRLucbjBLSEfbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

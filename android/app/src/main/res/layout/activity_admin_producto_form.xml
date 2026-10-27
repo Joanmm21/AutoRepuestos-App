@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101114"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/tvTituloFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar producto"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#B00000"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Fotografía del producto"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgVistaPreviaProducto"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="10dp"
+            android:background="#222327"
+            android:contentDescription="Vista previa de la fotografía del producto"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/btnSeleccionarImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Seleccionar fotografía de la galería"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242" />
+
+        <TextView
+            android:id="@+id/tvEstadoImagenProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Puedes guardar el producto sin fotografía."
+            android:textColor="#AAAAAA"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etAdminNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Nombre del producto"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textCapSentences" />
+
+        <Spinner
+            android:id="@+id/spAdminCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etAdminMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marca"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/etAdminPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio (ej. 14.25)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/etAdminStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stock"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/etAdminMinimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stock mínimo"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/etAdminDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <TextView
+            android:id="@+id/tvAdminFormEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cargando..."
+            android:textColor="#FFB74D"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnCancelarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242" />
+
+        <Button
+            android:id="@+id/btnGuardarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar cambios"
+            android:backgroundTint="#B00000"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/card_dark">
+
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerInside"
+        android:contentDescription="Imagen del producto" />
+
+    <TextView
+        android:id="@+id/tvCategoriaProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATEGORÍA"
+        android:textColor="@color/orange_primary"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del producto"
+        android:textColor="@color/text_white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvPrecioProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textColor="@color/text_white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

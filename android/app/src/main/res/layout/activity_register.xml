@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUEVO REGISTRO"
+            android:textColor="@color/text_white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea tu cuenta para acceder a AutoParts"
+            android:textColor="@color/text_muted"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Nombre completo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE COMPLETO"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp"
+            android:layout_marginTop="32dp" />
+
+        <EditText
+            android:id="@+id/etRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/card_dark"
+            android:hint="Ingresa tu nombre completo"
+            android:textColorHint="#888888"
+            android:textColor="@color/text_white"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="6dp" />
+
+        <!-- Correo electrónico -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CORREO ELECTRÓNICO"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/card_dark"
+            android:hint="usuario@autoparts.com"
+            android:textColorHint="#888888"
+            android:textColor="@color/text_white"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="6dp" />
+
+        <!-- Contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTRASEÑA"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/card_dark"
+            android:hint="Mínimo 6 caracteres"
+            android:textColorHint="#888888"
+            android:textColor="@color/text_white"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="6dp" />
+
+        <!-- Confirmar contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR CONTRASEÑA"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etRegisterConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/card_dark"
+            android:hint="Repite tu contraseña"
+            android:textColorHint="#888888"
+            android:textColor="@color/text_white"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="6dp" />
+
+        <!-- Botón crear cuenta -->
+        <Button
+            android:id="@+id/btnRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="CREAR CUENTA"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/orange_primary"
+            android:layout_marginTop="28dp" />
+
+        <!-- Volver al login -->
+        <TextView
+            android:id="@+id/tvBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes cuenta? Inicia sesión aquí"
+            android:textColor="@color/orange_primary"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

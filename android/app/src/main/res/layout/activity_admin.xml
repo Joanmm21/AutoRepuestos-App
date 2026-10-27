@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#101114">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#B00000"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AutoParts · Admin"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnAdminLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:backgroundTint="#252525"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvAdminBienvenida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido, Administrador"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Panel de administrador"
+                android:textColor="#BBBBBB"
+                android:layout_marginBottom="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnAdminInventario"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="92dp"
+                    android:text="▣&#10;Inventario"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#292A30"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:id="@+id/btnAdminCatalogo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="92dp"
+                    android:text="▦&#10;Catálogo"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#292A30"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:id="@+id/btnAdminPedidos"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="92dp"
+                    android:text="Pedidos"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#292A30" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvResumenInventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inventario"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/etBuscarInventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Buscar producto..."
+                android:textColor="#FFFFFF"
+                android:textColorHint="#999999"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnAgregarProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Agregar producto"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#B00000" />
+
+            <TextView
+                android:id="@+id/tvEstadoInventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cargando..."
+                android:textColor="#BBBBBB"
+                android:layout_marginVertical="12dp" />
+
+            <LinearLayout
+                android:id="@+id/listaInventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

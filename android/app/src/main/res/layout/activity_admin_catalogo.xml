@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#101114"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnVolverCatalogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="← Volver al panel"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#292A30" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catálogo de productos"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:background="#B00000"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnNuevoCatalogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Agregar producto"
+        android:backgroundTint="#B00000"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvEstadoCatalogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargando..."
+        android:textColor="#BBBBBB"
+        android:padding="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/listaCatalogoAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>

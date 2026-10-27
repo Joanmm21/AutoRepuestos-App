@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:src="@android:drawable/ic_menu_compass"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AUTO PARTS"
+            android:textColor="@color/text_white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFESSIONAL GRADE PORTAL"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:letterSpacing="0.15" />
+
+        <!-- Campo Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HARDWARE IDENTIFIER (EMAIL)"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/card_dark"
+            android:hint="mechanic@autoparts.com"
+            android:textColorHint="#555555"
+            android:textColor="@color/text_white"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="6dp" />
+
+        <!-- Campo Contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SECURE ACCESS KEY"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/card_dark"
+            android:hint="••••••••"
+            android:textColorHint="#555555"
+            android:textColor="@color/text_white"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="6dp" />
+
+        <!-- Botón de Login -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="INITIALIZE LOG IN"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/orange_primary"
+            android:layout_marginTop="28dp" />
+
+        <!-- Enlace de registro -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First deployment? Register Terminal"
+            android:textColor="@color/orange_primary"
+            android:textSize="13sp"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

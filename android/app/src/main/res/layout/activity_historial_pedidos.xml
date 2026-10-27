@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#101114"
+    android:padding="16dp">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/tvVolverHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Volver al catálogo"
+        android:textColor="#FF791F"
+        android:textSize="15sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="18dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HISTORIAL DE COMPRAS"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulta los pedidos que has realizado"
+        android:textColor="#A7A7AD"
+        android:textSize="14sp"
+        android:paddingBottom="20dp"/>
+
+    <!-- Mensaje de carga -->
+    <ProgressBar
+        android:id="@+id/progresoHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <!-- Mensaje de historial vacío o error -->
+    <TextView
+        android:id="@+id/tvHistorialVacio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todavía no tienes pedidos registrados"
+        android:textColor="#A7A7AD"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:padding="24dp"
+        android:visibility="gone"/>
+
+    <!-- Lista de pedidos -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/contenedorHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <!-- Encabezado: saludo y cerrar sesión -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Saludo del cliente -->
+        <TextView
+            android:id="@+id/tvSaludo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hola, Cliente"
+            android:textColor="@color/text_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Cerrar sesión en esquina superior derecha -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Cerrar sesión"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            android:textColor="@color/text_white"
+            android:backgroundTint="#303036"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingHorizontal="10dp" />
+
+    </LinearLayout>
+
+    <!-- Subtítulo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encuentra los repuestos que necesitas"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Buscador -->
+    <EditText
+        android:id="@+id/etBuscarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/card_dark"
+        android:hint="Buscar repuesto, marca o categoría..."
+        android:textColor="@color/text_white"
+        android:textColorHint="@color/text_muted"
+        android:inputType="text"
+        android:singleLine="true"
+        android:paddingHorizontal="14dp" />
+
+    <!-- Título de categorías -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATEGORÍAS"
+        android:textColor="@color/text_white"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="22dp" />
+
+    <!-- Categorías -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Todos"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/orange_primary" />
+
+            <Button
+                android:id="@+id/btnFrenos"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Frenos"
+                android:textAllCaps="false"
+                android:layout_marginStart="6dp" />
+
+            <Button
+                android:id="@+id/btnMotor"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Motor"
+                android:textAllCaps="false"
+                android:layout_marginStart="6dp" />
+
+            <Button
+                android:id="@+id/btnSuspension"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Suspensión"
+                android:textAllCaps="false"
+                android:layout_marginStart="6dp" />
+
+            <Button
+                android:id="@+id/btnElectrico"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Eléctrico"
+                android:textAllCaps="false"
+                android:layout_marginStart="6dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Título de productos -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REPUESTOS DESTACADOS"
+        android:textColor="@color/text_white"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Catálogo de productos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <!-- Abrir carrito -->
+    <Button
+        android:id="@+id/btnAbrirCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="VER CARRITO"
+        android:textColor="@color/text_white"
+        android:backgroundTint="@color/orange_primary"
+        android:layout_marginTop="8dp" />
+
+    <!-- Consultar historial -->
+    <Button
+        android:id="@+id/btnMisPedidos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="MIS PEDIDOS"
+        android:textColor="@color/text_white"
+        android:backgroundTint="@color/orange_primary"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
